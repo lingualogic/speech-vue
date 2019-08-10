@@ -1,0 +1,13 @@
+{
+    "name": "speech-vue-app",
+    "displayName": "SpeechVueApp",
+    "version": "0.5.13",
+    "description": "Test-App fuer Speech-Vue SDK",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "LinguaLogic Team",
+    "license": "MIT",
+    "dependencies": {}
+}
