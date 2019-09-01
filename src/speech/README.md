@@ -1,6 +1,6 @@
 # Speech-Vue Quellcode
 
-**Version:** **0.5.13**
+**Version:** **0.5.14**
 
 Der Quellcode von Speech-Vue ist vollständig im Verzeichnis src/speech untergebracht, und baut auf dem Speech-Framework auf. Es sollten keine direkten Zugriffe auf das Speech-Framework genutzt werden, da sich das Speech-Framework API noch stark ändern kann. Alle Zugriffe sollten nur über die Services des Speech-Vue SDK im eigenen Code erfolgen.
 
@@ -40,4 +40,4 @@ Zusätzlich gibt des noch Module, die für die Initialsierung von optionalen Sub
 
 * **MicrosoftModule**: dient zur Initialisierung des Microsoft Cloud-Service
 
-* **RasaModule**: dient zur Initialisierung des Rasa Cloud-Service
+* **RasaModule**: dient zur Initialisierung des Rasa Cloud-Service (benötigt eigenen Rasa-Server)

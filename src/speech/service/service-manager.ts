@@ -4,7 +4,7 @@
  * Initialisiert und verwaltet alle verfuegbaren Speech-Services.
  *
  * Konfiguration: stable
- * Version: 0.5.13.0001 (Alpha) vom 10.08.2019
+ * Version: 0.5.14.0002 (Beta) vom 31.08.2019
  *
  * Speech-Services:
  *
