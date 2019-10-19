@@ -85,6 +85,7 @@ export * from './action/action-service';
 
 export * from './dialog/dialog-service-action.interface';
 export * from './dialog/dialog-service-speak.interface';
+export * from './dialog/dialog-service-data.interface';
 export * from './dialog/dialog-service-option.interface';
 export * from './dialog/dialog-service';
 
@@ -92,6 +93,7 @@ export * from './dialog/dialog-service';
 // bot-service
 
 export * from './bot/bot-service-action.interface';
+export * from './bot/bot-service-data.interface';
 export * from './bot/bot-service-option.interface';
 export * from './bot/bot-service';
 

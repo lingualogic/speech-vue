@@ -1,6 +1,6 @@
 {
   "name": "speak",
-  "version": "0.5.14",
+  "version": "0.5.15",
   "private": true,
   "scripts": {
     "start": "vue-cli-service serve --open",
@@ -13,8 +13,8 @@
     "@fortawesome/free-solid-svg-icons": "^5.10.1",
     "@fortawesome/vue-fontawesome": "^0.1.6",
     "core-js": "^2.6.5",
-    "speech-framework": "file:../../speech-framework-0.5.14.tgz",
-    "speech-vue": "file:../../dist/speech-vue-0.5.14.tgz",
+    "speech-framework": "file:../../speech-framework-0.5.15.tgz",
+    "speech-vue": "file:../../dist/speech-vue-0.5.15.tgz",
     "vue": "^2.6.10",
     "vue-class-component": "^7.0.2",
     "vue-property-decorator": "^8.1.0"

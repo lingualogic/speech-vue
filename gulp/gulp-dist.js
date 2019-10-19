@@ -255,6 +255,7 @@ module.exports = ({ gulp, docsDir, bundleDir, srcSpeechDir, buildDir, buildSpeec
         return gulp.src([
             `${buildSpeechDir}/dialog/dialog-service-const.d.ts`,
             `${buildSpeechDir}/dialog/dialog-service-action.interface.d.ts`,
+            `${buildSpeechDir}/dialog/dialog-service-data.interface.d.ts`,
             `${buildSpeechDir}/dialog/dialog-service-option.interface.d.ts`,
             `${buildSpeechDir}/dialog/dialog-service-speak.interface.d.ts`,
             `${buildSpeechDir}/dialog/dialog-service.d.ts`,
@@ -271,6 +272,7 @@ module.exports = ({ gulp, docsDir, bundleDir, srcSpeechDir, buildDir, buildSpeec
         return gulp.src([
             `${buildSpeechDir}/bot/bot-service-const.d.ts`,
             `${buildSpeechDir}/bot/bot-service-action.interface.d.ts`,
+            `${buildSpeechDir}/bot/bot-service-data.interface.d.ts`,
             `${buildSpeechDir}/bot/bot-service-option.interface.d.ts`,
             `${buildSpeechDir}/bot/bot-service.d.ts`,
         ])
