@@ -20,12 +20,12 @@ Die Speech-Vue Bibliothek benötigt das Speech-Framework, welches unter [https:/
 
 Um in eigenen Projekten Speech-Vue nutzen zu können, muss das Speech-Framework NPM-Package von der [LinguaLogic-Seite](https://lingualogic.de) heruntergeladen werden, in den eigenen Projektordner kopiert werden und vor Speech-Vue installiert sein. Das Speech-Framework NPM-Package wird mit folgendem Befehl installiert:
 
-    $ npm install speech-framework-0.5.15.tgz
+    $ npm install speech-framework-0.5.16.tgz
 
 
 ## Letzte Version
 
-* 0.5.15.0003 Beta vom 19.10.2019 [Release Notizen](./CHANGELOG.md)
+* 0.5.16.0004 Beta vom 17.12.2019 [Release Notizen](./CHANGELOG.md)
 
 Wir empfehlen für neue Vue-Projekte die Verwendung von Typescript, ansonsten kann Speech-Vue auch mit JavaScript verwendet werden.
 
@@ -72,6 +72,7 @@ Zuerst muss das Speech-Vue Github-Repsitory unter [https://github.com/lingualogi
 
     $ git clone https://github.com/lingualogic/speech-vue
     $ cd speech-vue
+    $ git checkout 0.5.x
 
 danach werden alle NPM-Pakete für Speech-Vue mit folgendem Befehl installiert:
 
@@ -89,11 +90,11 @@ Die API-Dokumentation kann mit folgenden Befehl in docs/api erzeugt werden:
 
     $ npm run docs
 
-Das im dist/ Ordner erzeugte npm-Paket 'speech-vue-0.5.15.tgz' kann in den eigenen Vue Projektordner kopiert werden.
+Das im dist/ Ordner erzeugte npm-Paket 'speech-vue-0.5.16.tgz' kann in den eigenen Vue Projektordner kopiert werden.
 
-Die Installation des 'speech-vue-0.5.15.tgz' npm-Paketes erfolgt im eigenen Vue Projektordner mit folgendem Befehl:
+Die Installation des 'speech-vue-0.5.16.tgz' npm-Paketes erfolgt im eigenen Vue Projektordner mit folgendem Befehl:
 
-    $ npm install speech-vue-0.5.15.tgz
+    $ npm install speech-vue-0.5.16.tgz
 
 Danach kann Speech-Vue im eigenen Vue-Projekt verwendet werden.
 
@@ -105,6 +106,11 @@ Alternativ kann das fertige Speech-Vue npm-Paket auch von der [LinguaLogic-Webse
 Speech-Vue kann mit folgendem Befehl wieder deinstalliert werden:
 
     $ npm uninstall speech-vue
+
+
+## gebrochener Code gegenüber der Vorversion
+
+* wird das Google-Module eingebunden, muss jetzt auch der Parameter googleServerUrl bei den googleCredentials eingetragen und der Konfiguration mitübergeben werden.
 
 
 ## Bekannte Probleme
