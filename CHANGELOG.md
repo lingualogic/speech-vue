@@ -1,6 +1,13 @@
 # Speech-Vue Release Notizen
 
 
+## 0.5.17.0005 Release (16.02.2020)
+
+### Features
+
+* **Google:** Erweiterung der Google-Komponente um ASR mit Verbindung zum Google Token-Server.
+
+
 ## 0.5.16.0004 Beta (17.12.2019)
 
 ### Features
