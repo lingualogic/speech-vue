@@ -1,6 +1,6 @@
 {
     "name": "speech-vue",
-    "version": "0.5.17",
+    "version": "0.5.18",
     "description": "Speech-Vue",
     "author": "LinguaLogic Team",
     "license": "MIT",
@@ -12,6 +12,8 @@
         "serve": "vue-cli-service serve",
         "build": "gulp build",
         "build:app": "vue-cli-service build",
+        "build:npm": "gulp build-npm",
+        "publish:npm": "gulp publish-npm",
         "public:build:prod": "gulp public-build-prod",
         "speak": "cd examples/speak && npm install && npm start",
         "listen": "cd examples/listen && npm install && npm start"
@@ -22,7 +24,7 @@
         "@fortawesome/free-solid-svg-icons": "^5.10.1",
         "@fortawesome/vue-fontawesome": "^0.1.6",
         "rxjs": "^6.5.2",
-        "speech-framework": "file:speech-framework-0.5.17.tgz",
+        "speech-framework": "file:speech-framework-0.5.18.tgz",
         "vue": "^2.6.10",
         "vue-class-component": "^7.0.2",
         "vue-property-decorator": "^8.1.0"

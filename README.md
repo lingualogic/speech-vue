@@ -20,12 +20,12 @@ Die Speech-Vue Bibliothek benötigt das Speech-Framework, welches unter [https:/
 
 Um in eigenen Projekten Speech-Vue nutzen zu können, muss das Speech-Framework NPM-Package von der [LinguaLogic-Seite](https://lingualogic.de) heruntergeladen werden, in den eigenen Projektordner kopiert werden und vor Speech-Vue installiert sein. Das Speech-Framework NPM-Package wird mit folgendem Befehl installiert:
 
-    $ npm install speech-framework-0.5.17.tgz
+    $ npm install speech-framework-0.5.18.tgz
 
 
 ## Letzte Version
 
-* 0.5.17.0005 Release vom 16.02.2020 [Release Notizen](./CHANGELOG.md)
+* 0.5.18.0006 Release vom 28.03.2020 [Release Notizen](./CHANGELOG.md)
 
 Wir empfehlen für neue Vue-Projekte die Verwendung von Typescript, ansonsten kann Speech-Vue auch mit JavaScript verwendet werden.
 
@@ -68,6 +68,17 @@ Will man den Clouddienst verwenden, muss ein eigener Account eingerichtet werden
 
 ## Installation
 
+Die Installation kann vom globalen NPM-Repository aus erfolgen, oder als lokale Installation erzeugt man sich sein NPM-Package selbst.
+
+### NPM-Package
+
+Zur Installation von Speech-Vue ins eigene Projekt, im Projektverzeichnis folgenden Befehl eingeben:
+
+    $ npm install speech-vue
+
+
+### lokales Package
+
 Zuerst muss das Speech-Vue Github-Repsitory unter [https://github.com/lingualogic/speech-vue](https://github.com/lingualogic/speech-vue) mit folgendem Befehl geklont werden:
 
     $ git clone https://github.com/lingualogic/speech-vue
@@ -89,11 +100,11 @@ Die API-Dokumentation kann mit folgenden Befehl in docs/api erzeugt werden:
 
     $ npm run docs
 
-Das im dist/ Ordner erzeugte npm-Paket 'speech-vue-0.5.17.tgz' kann in den eigenen Vue Projektordner kopiert werden.
+Das im dist/ Ordner erzeugte npm-Paket 'speech-vue-0.5.18.tgz' kann in den eigenen Vue Projektordner kopiert werden.
 
 Die Installation des speech-vue npm-Paketes erfolgt im eigenen Vue Projektordner mit folgendem Befehl:
 
-    $ npm install speech-vue-0.5.17.tgz
+    $ npm install speech-vue-0.5.18.tgz
 
 Danach kann Speech-Vue im eigenen Vue-Projekt verwendet werden.
 
