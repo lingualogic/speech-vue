@@ -20,6 +20,7 @@ Die nächste Grafik zeigt die konkrete Vererbungsbeziehung zu BaseService, sowie
 ## API
 
 Der ListenService definiert die öffentliche Schnittstelle von Speech-Vue für die Spracheingabe. Die folgende Grafik zeigt einen Überblick über die gesamte API des ListenServices. Die API teilt sich auf in statische Klassenfunktionen, Objektfunktionen, Objektereignisse und Objekteigenschaften. Die API verfügt über eine auf Funktionen und eine auf Eigenschaften basierende Schnittstelle. Die gleiche Aufgabe kann über Funktionsaufrufe oder über das Setzen von Eigenschaften erledigt werden. Z.B. kann die Sprache entweder mit listenService.setLanguage('de') oder mit listenService.language = 'de' eingetragen werden, bevor mit listenService.start() die Spracheingabe gestartet wird.
+Der Modus bestimmt, ob Listen im Command-Modus oder im Diktier-Modus verwendet wird. Im Command-Modus wird nur ein einziger kurzer Satz erfasst, während im Diktier-Modus die ASR solange Sprache in Text übersetzt, bis Listen gestoppt wird. Dabei werden auch einige Interpunktionszeichen beachtet. Der Diktiermodus funtioniert zur Zeit nur mit der HTML5-ASR und kann nur im Chrome-Browser verwendet werden.
 
 
 ![ListenService-API](ListenService-3.gif)
@@ -35,7 +36,11 @@ Dazu müssen das Speech-Framework und das Speech-Vue npm-Paket in der gleichen V
 
 	$ npm install speech-framework-<version>.tgz
 	$ npm install speech-vue-<version>.tgz
-	 
+
+Alternativ kann man Speech-Vue aus dem globalen NPM-Repository installieren. Dann wird Speech-Framework automatisch mitinstalliert.
+
+	$ npm install speech-vue
+		 
 
 ## Konfiguration
 

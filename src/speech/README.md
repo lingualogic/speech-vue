@@ -1,6 +1,6 @@
 # Speech-Vue Quellcode
 
-**Version:** **0.5.18**
+**Version:** **0.5.19**
 
 Der Quellcode von Speech-Vue ist vollständig im Verzeichnis src/speech untergebracht, und baut auf dem Speech-Framework auf. Es sollten keine direkten Zugriffe auf das Speech-Framework genutzt werden, da sich das Speech-Framework API noch stark ändern kann. Alle Zugriffe sollten nur über die Services des Speech-Vue SDK im eigenen Code erfolgen.
 

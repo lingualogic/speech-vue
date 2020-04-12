@@ -5,16 +5,16 @@ Der IntentService dient zur Sprachanalyse von Texten zur Erzeugung eines Intents
 
 ## Architektur
 
-In der folgenden Grafik werden die einzelnen Schichten, angefangen von der VueApp, über den ServiceManager, den IntentService, den GoogleService und das GoogleModule von Speech-Vue, die Intent-Komponente, das Plugin für die NLU (Natural Language Understanding), sowie die verschiedenen Google-Komponenten im Speech-Framework, bis hinunter zum Google Cloud-Dienst, dargestellt. 
+In der folgenden Grafik werden die einzelnen Schichten, angefangen von der VueApp, über den ServiceManager, den IntentService, den GoogleService und das GoogleModule von Speech-Vue, die Intent-Komponente, das Plugin für die NLU (Natural Language Understanding), sowie die verschiedenen Cloud-Komponenten im Speech-Framework, bis hinunter zum Cloud-Dienst, dargestellt. 
 
 
 ![IntentService-Architektur](IntentService-1.gif)
 
 
-Ganz oben sind die für den IntentService notwendigen Google-Credentials dargestellt, die der VueApp übergeben werden müssen. Eine Anleitung für die Erstellung der Google-Credentials und die Einbindung des GoogleModule in die VueApp zur Aktivierung des Google Cloud-Service findet man unter [docs/cloud/Google.md](./../../cloud/Google.md)
+Ganz oben sind die für den IntentService notwendigen Google-Credentials dargestellt, die der VueApp übergeben werden müssen. Eine Anleitung für die Erstellung der Credentials und die Einbindung der Cloud-Module in die VueApp zur Aktivierung des jeweiligen Cloud-Service findet man unter [docs/cloud/Cloud.md](./../../cloud/Cloud.md)
 
-Die nächste Grafik zeigt die konkrete Vererbungsbeziehung zu BaseService, sowie die Einbindung von IntentFactory und IntentInterface aus dem Speech-Framework. IntentFactory ist eine statische Klasse und erzeugt das Intent-Objekt zum IntentInterface. Auf der linken Seite ist das GoogleModule dargestellt, welches als statische Klasse implementiert ist und das Google Singleton aus dem Speech-Framework einbindet.
-Damit Google funktioniert, müssen die Google-Credentials vom GoogleModule an das Google Singleton weitergereicht werden.
+Die nächste Grafik zeigt die konkrete Vererbungsbeziehung zu BaseService, sowie die Einbindung von IntentFactory und IntentInterface aus dem Speech-Framework. IntentFactory ist eine statische Klasse und erzeugt das Intent-Objekt zum IntentInterface. Auf der linken Seite sind die verschiedenen Cloud-Module dargestellt, welche als statische Klassen implementiert sind und das jeweilige Cloud-Singleton (Google, Microsoft und Rasa) aus dem Speech-Framework einbinden.
+Damit die Cloud-Dienste funktionieren, müssen die Credentials vom jeweiligen Cloud-Module an das Cloud-Singleton weitergereicht werden.
 
 
 ![IntentService-Struktur](IntentService-2.gif)
@@ -38,6 +38,10 @@ Dazu müssen das Speech-Framework und das Speech-Vue npm-Paket in der gleichen V
 	$ npm install speech-framework-<version>.tgz
 	$ npm install speech-vue-<version>.tgz
 	 
+Alternativ kann man Speech-React aus dem globalen NPM-Repository installieren. Dann wird Speech-Framework automatisch mitinstalliert.
+
+	$ npm install speech-react
+	
 
 ## Konfiguration
 

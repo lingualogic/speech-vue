@@ -20,12 +20,18 @@ Die Speech-Vue Bibliothek benötigt das Speech-Framework, welches unter [https:/
 
 Um in eigenen Projekten Speech-Vue nutzen zu können, muss das Speech-Framework NPM-Package von der [LinguaLogic-Seite](https://lingualogic.de) heruntergeladen werden, in den eigenen Projektordner kopiert werden und vor Speech-Vue installiert sein. Das Speech-Framework NPM-Package wird mit folgendem Befehl installiert:
 
-    $ npm install speech-framework-0.5.18.tgz
+    $ npm install speech-framework-0.5.19.tgz
+
+Alternativ kann das Speech-Framework auch über das offizielle globale NPM-Repository installiert werden:
+
+    $ npm install speech-framework
+
+Wird speech-vue aus dem globalen NPM-Repository installert, wird speech-framework automatisch mitinstalliert.
 
 
 ## Letzte Version
 
-* 0.5.18.0006 Release vom 28.03.2020 [Release Notizen](./CHANGELOG.md)
+* 0.5.19.0007 Release vom 11.04.2020 [Release Notizen](./CHANGELOG.md)
 
 Wir empfehlen für neue Vue-Projekte die Verwendung von Typescript, ansonsten kann Speech-Vue auch mit JavaScript verwendet werden.
 
@@ -76,6 +82,7 @@ Zur Installation von Speech-Vue ins eigene Projekt, im Projektverzeichnis folgen
 
     $ npm install speech-vue
 
+Installiert man speech-vue auf diese Art, wird speech-framework automatisch mitinstalliert.
 
 ### lokales Package
 
@@ -100,11 +107,11 @@ Die API-Dokumentation kann mit folgenden Befehl in docs/api erzeugt werden:
 
     $ npm run docs
 
-Das im dist/ Ordner erzeugte npm-Paket 'speech-vue-0.5.18.tgz' kann in den eigenen Vue Projektordner kopiert werden.
+Das im dist/ Ordner erzeugte npm-Paket 'speech-vue-0.5.19.tgz' kann in den eigenen Vue Projektordner kopiert werden.
 
 Die Installation des speech-vue npm-Paketes erfolgt im eigenen Vue Projektordner mit folgendem Befehl:
 
-    $ npm install speech-vue-0.5.18.tgz
+    $ npm install speech-vue-0.5.19.tgz
 
 Danach kann Speech-Vue im eigenen Vue-Projekt verwendet werden.
 

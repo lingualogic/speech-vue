@@ -1,21 +1,20 @@
 # SpeakService
 
-Der SpeakService dient zur Sprachsynthese von Texten und zum Abspielen von Audiosprachdateien. Für die Sprachsynthese wird das HTML5 SpeechSynthesis Web-API verwendet. Es kann auch der Amazon Cloud-Service verwendet werden. Für das Abspielen der Audiodateien wird das HTML5 Audio Web-API verwendet. Der gesamte Code läuft komplett im Browser. Der SpeakService erbt vom abstrakten [BaseService](./../base/BaseService.md).
+Der SpeakService dient zur Sprachsynthese von Texten und zum Abspielen von Audiosprachdateien. Für die Sprachsynthese wird das HTML5 SpeechSynthesis Web-API verwendet. Es kann auch ein Cloud-Service verwendet werden. Für das Abspielen der Audiodateien wird das HTML5 Audio Web-API verwendet. Der gesamte Code läuft komplett im Browser. Der SpeakService erbt vom abstrakten [BaseService](./../base/BaseService.md).
 
 
 ## Architektur
 
-In der folgenden Grafik werden die einzelnen Schichten, angefangen von der VueApp, über den ServiceManager und den SpeakService von Speech-Vue, die Speak-Komponente in Speech-Framework, die Plugins für TTS (Text-to-Speech) und AudioPlayer, bis hinunter zu den Standardschnittstellen des Browsers für SpeechSynthesis und Audio, sowie dem Amazon Polly Server, dargestellt. 
+In der folgenden Grafik werden die einzelnen Schichten, angefangen von der VueApp, über den ServiceManager und den SpeakService von Speech-Vue, die Speak-Komponente in Speech-Framework, die Plugins für TTS (Text-to-Speech) und AudioPlayer, bis hinunter zu den Standardschnittstellen des Browsers für SpeechSynthesis und Audio, sowie den Gloud-Diensten, dargestellt. 
 
 
 ![SpeakService-Architektur](SpeakService-1.gif)
 
 
-Ganz oben sind die für den SpeakService notwendigen Amazon-Credentials dargestellt, die der VueApp übergeben werden müssen, wenn Amazon als TTS zum Einsatz kommen soll. Eine Anleitung für die Erstellung der Amazon-Credentials und die Einbindung des AmazonModule in die VueApp zur Aktivierung des Amazon Cloud-Service findet man unter [docs/cloud/amazon/Amazon.md](./../../cloud/amazon/Amazon.md)
+Ganz oben sind die für den SpeakService notwendigen Credentials dargestellt, die der VueApp übergeben werden müssen, wenn ein Cloud-Dienst als TTS zum Einsatz kommen soll. Eine Anleitung für die Erstellung der Credentials und die Einbindung der Cloud-Module in die VueApp zur Aktivierung des jeweiligen Cloud-Service findet man unter [docs/cloud/Cloud.md](./../../cloud/Cloud.md)
 
-Die nächste Grafik zeigt die konkrete Vererbungsbeziehung zu BaseService, sowie die Einbindung von SpeakFactory und SpeakInterface aus dem Speech-Framework. SpeakFactory ist eine statische Klasse und erzeugt das Speak-Objekt zum SpeakInterface. Auf der linken Seite ist das AmazonModule dargestellt, welches als statische Klasse implementiert ist und das Amazon Singleton aus dem Speech-Framework einbindet.
-Damit Amazon funktioniert, müssen die Amazon-Credentials vom AmazonModule an das Amazon Singleton weitergereicht werden. 
-
+Die nächste Grafik zeigt die konkrete Vererbungsbeziehung zu BaseService, sowie die Einbindung von SpeakFactory und SpeakInterface aus dem Speech-Framework. SpeakFactory ist eine statische Klasse und erzeugt das Speak-Objekt zum SpeakInterface. Auf der linken Seite sind die Cloud-Module dargestellt, welche als statische Klassen implementiert sind und die Cloud-Singletons (Amazon, Google und Microsoft) aus dem Speech-Framework einbinden.
+Damit die Cloud-Dienste funktionieren, müssen die Credentials von den Cloud-Modulen an die Cloud-Singletons weitergereicht werden. 
 
 ![SpeakService-Struktur](SpeakService-2.gif)
 
@@ -39,7 +38,11 @@ Dazu müssen das Spech-Framework und das Speech-Vue npm-Paket in der gleichen Ve
 	$ npm install speech-framework-<version>.tgz
 	$ npm install speech-vue-<version>.tgz
 	 
+Alternativ kann man Speech-Vue aus dem globalen NPM-Repository installieren. Dann wird Speech-Framework automatisch mitinstalliert.
 
+	$ npm install speech-vue
+	
+	
 ## Konfiguration
 
 Dier erste Aufgabe vor Nutzung des SpeakService besteht in der Festlegung der Konfiguration vor der Erzeugung des Services in Vue. In der Defaulteinstellung wird die init()-Funktion im Konstruktor aufgerufen und die voreingestellte Konfiguration übernommen. Will man die Defaultkonfiguration überschreiben, holt man sie sich mittels der Klassenfunktion SpeakService.getConfig(). Diese Funktion gibt das SpeakConfig-Objekt des SpeakServices zurück.
