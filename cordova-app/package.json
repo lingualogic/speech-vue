@@ -1,7 +1,7 @@
 {
     "name": "speech-vue-app",
     "displayName": "SpeechVueApp",
-    "version": "0.5.21",
+    "version": "0.5.22",
     "description": "Test-App fuer Speech-Vue SDK",
     "main": "index.js",
     "scripts": {

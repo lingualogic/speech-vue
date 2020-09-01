@@ -1,6 +1,13 @@
 # Speech-Vue Release Notizen
 
 
+## 0.5.22.0010 Release (31.08.2020)
+
+### Fix
+
+Fehlerbeseitigung in Google Cloud-Dienst, Speak, Listen und Intent.
+
+
 ## 0.5.21.0009 Release (26.06.2020)
 
 ### Features
