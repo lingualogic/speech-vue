@@ -20,7 +20,7 @@ Die Speech-Vue Bibliothek benötigt das Speech-Framework, welches unter [https:/
 
 Um in eigenen Projekten Speech-Vue nutzen zu können, muss das Speech-Framework NPM-Package von der [LinguaLogic-Seite](https://lingualogic.de) heruntergeladen werden, in den eigenen Projektordner kopiert werden und vor Speech-Vue installiert sein. Das Speech-Framework NPM-Package wird mit folgendem Befehl installiert:
 
-    $ npm install speech-framework-0.5.22.tgz
+    $ npm install speech-framework-0.5.23.tgz
 
 Alternativ kann das Speech-Framework auch über das offizielle globale NPM-Repository installiert werden:
 
@@ -31,18 +31,18 @@ Wird speech-vue aus dem globalen NPM-Repository installert, wird speech-framewor
 
 ## Letzte Version
 
-* 0.5.22.0010 Release vom 31.08.2020 [Release Notizen](./CHANGELOG.md)
+* 0.5.23.0011 Release vom 10.07.2021 [Release Notizen](./CHANGELOG.md)
 
 Wir empfehlen für neue Vue-Projekte die Verwendung von Typescript, ansonsten kann Speech-Vue auch mit JavaScript verwendet werden.
 
 
 ## Voraussetzungen
 
-Wir haben Speech-Vue auf Mac OS X 10.11, Mac OS X 10.14, Win 10 und Ubuntu 18.04 getestet. Als Plattformen können eingesetzt werden:
+Wir haben Speech-Vue auf Mac OS X 10.14, Win 10 und Ubuntu 20.04 getestet. Als Plattformen können eingesetzt werden:
 
-* Mac OS X >= 10.9
-* Windows >= 7
-* aktuelles Linux (z.B. Ubuntu 18.04)
+* Mac OS X >= 10.14
+* Windows >= 10
+* aktuelles Linux (z.B. Ubuntu 20.04)
 
 Es wird die aktuellste Vue-Version empfohlen
 
@@ -51,20 +51,20 @@ Es wird die aktuellste Vue-Version empfohlen
 
 Grundsätzlich ist das Speech-Vue SDK in Chrome, Firefox, Opera, Safari und Edge nutzbar, allerdings hängt die Sprachausgabe unter diesen Browsern von der zugrunde liegenden Text-to-Speech Engine der jeweiligen Plattformen ab. Die Spracheingabe funktioniert bisher nur in Chrome.
 
-* Chrome >= 71   Windows/Linux/MacOS (Html5: TTS, ASR)(Amazon: TTS, Google: NLU)
-* Firefox >= 64  Windows/Linux/MacOS (Html5: TTS)(Amazon: TTS, Google: NLU)
-* Opera >= 58    Windows/MacOS (Html5: TTS)(Amazon: TTS, Google: NLU) Linux (kein Html5)
-* Safari >= 12   MacOS/iOS (Html5: TTS)(Amazon: TTS, Google: NLU)
-* Edge >= 42     Windows (Html5: TTS)(Amazon: TTS, Google: NLU)
+* Chrome >= 80   Windows/Linux/MacOS (Html5: TTS, ASR)(Amazon: TTS, Google: NLU)
+* Firefox >= 80  Windows/Linux/MacOS (Html5: TTS)(Amazon: TTS, Google: NLU)
+* Opera >= 70    Windows/MacOS (Html5: TTS)(Amazon: TTS, Google: NLU) Linux (kein Html5)
+* Safari >= 14   MacOS/iOS (Html5: TTS)(Amazon: TTS, Google: NLU)
+* Edge >= 80     Windows (Html5: TTS)(Amazon: TTS, Google: NLU)
 
 
 NodeJS muss installiert sein.
 
-* NodeJS >= 10.X und <= 12.X (LTS-Version)
+* NodeJS >= 12.X und <= 14.X (LTS-Version)
 
 Als weitere Plattformen können Android und iOS mit Cordova verwendet werden:
 
-* Cordova >= 8 für Android  >= 5.1 und iOS >= 10
+* Cordova >= 10 für Android  >= 5.1 und iOS >= 10
 
 Für Cordova müssen weitere Programme zur Entwicklung von Android- und iOS-Apps installiert werden.
 Informationen hierzu finden sich unter [docs/platform/Cordova.md](./docs/platform/Cordova.md).
@@ -107,11 +107,11 @@ Die API-Dokumentation kann mit folgenden Befehl in docs/api erzeugt werden:
 
     $ npm run docs
 
-Das im dist/ Ordner erzeugte npm-Paket 'speech-vue-0.5.22.tgz' kann in den eigenen Vue Projektordner kopiert werden.
+Das im dist/ Ordner erzeugte npm-Paket 'speech-vue-0.5.23.tgz' kann in den eigenen Vue Projektordner kopiert werden.
 
 Die Installation des speech-vue npm-Paketes erfolgt im eigenen Vue Projektordner mit folgendem Befehl:
 
-    $ npm install speech-vue-0.5.22.tgz
+    $ npm install speech-vue-0.5.23.tgz
 
 Danach kann Speech-Vue im eigenen Vue-Projekt verwendet werden.
 
