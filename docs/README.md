@@ -12,6 +12,6 @@ Die Dokumentation des Speech-Vue SDK:
 
 ## [Plattformen](./platform/README.md)
 
-## [API-Referenz](https://lingualogic.de/speech-vue/docs/latest/api)
+## [API-Referenz](./api/index.html)
 
 ## [Roadmap](./roadmap/README.md)

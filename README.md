@@ -31,7 +31,7 @@ Wird speech-vue aus dem globalen NPM-Repository installert, wird speech-framewor
 
 ## Letzte Version
 
-* 0.5.23.0011 Release vom 10.07.2021 [Release Notizen](./CHANGELOG.md)
+* 0.5.23.0011 Release vom 05.10.2021 [Release Notizen](./CHANGELOG.md)
 
 Wir empfehlen für neue Vue-Projekte die Verwendung von Typescript, ansonsten kann Speech-Vue auch mit JavaScript verwendet werden.
 
@@ -103,9 +103,6 @@ zum Schluß wird das NPM-Paket für Speech-Vue im dist/ Ordner erzeugt:
 
     $ npm run build
 
-Die API-Dokumentation kann mit folgenden Befehl in docs/api erzeugt werden:
-
-    $ npm run docs
 
 Das im dist/ Ordner erzeugte npm-Paket 'speech-vue-0.5.23.tgz' kann in den eigenen Vue Projektordner kopiert werden.
 
@@ -147,7 +144,7 @@ Speech-Vue kann mit folgendem Befehl wieder deinstalliert werden:
 
 [**Plattformen**](./docs/platform/README.md)
 
-[**API-Referenz**](https://lingualogic.de/speech-vue/docs/latest/api)
+[**API-Referenz**](https://lingualogic.github.io/speech-vue/api/index.html)
 
 [**Roadmap**](./docs/roadmap/README.md)
 
